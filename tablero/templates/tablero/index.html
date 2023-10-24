@@ -3,13 +3,37 @@
 <head>    
     <title>ÍNDICE DEL BUSCAMINAS</title>    
     <meta charset="UTF-8">
-    <meta name="title" content="Título de la WEB">
-    <meta name="description" content="Descripción de la WEB">    
-   
+    <meta name="title" content="Indica Buscaminas">
+    <meta name="description" content="Indice Buscaminas">    
+
+    <style type="text/css">
+        input{
+            margin-right: 20px;
+        }
+        #boton{
+            width: 100px;
+        }
+
+    </style>
     
 </head>  
 <body>    
     <a href="crea_tablero.html"> Crear Tablero </a>
- 
+    
+
+    <form id="formulario" action="./crea_tablero.html" method="post">
+        
+            <label for="fila">Filas:</label>
+            <input type="number" id="fila" name="fila" />
+          
+            <label for="columna">Columnas:</label>
+            <input type="number" id="columna" name="columna" />
+          
+            <input type="button" id="boton" name="boton" value="Crear Tablero"/>
+         
+        </ul>
+      </form>
+
+
 </body>  
 </html>
