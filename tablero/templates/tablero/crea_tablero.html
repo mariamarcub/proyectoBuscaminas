@@ -10,5 +10,26 @@
 </head>  
 <body>    
   <p>gagagaa</p>
+
+  import random
+  import os 
+
+  def crea_tablero(fil,col,val):
+
+  tablero = [] 
+
+  for i in range(fil): #FILAS
+      tablero.append([])
+         for j in range(col): #COLUMNAS
+             tablero[i].append(val)
+   return tablero
+
+
+   def muestra_tablero(tablero):
+
+       for fila in tablero:
+           for elem in fila:
+               print(elem, end=" ")
+           print()
 </body>  
 </html>
