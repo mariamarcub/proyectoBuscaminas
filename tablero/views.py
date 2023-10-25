@@ -7,6 +7,7 @@ def index(request):
 
 
 def crea_tablero(request):
+    tablero_form = creaTableroForm()
     #Si se ha enviado el formulario
     if request.method == 'GET':
         tablero_form = creaTableroForm(request.GET) #Coge el diccionario q está dentro del request
@@ -21,5 +22,5 @@ def crea_tablero(request):
                                                                             'rango_columnas':range(columnas) })
 
     #Si se pide la página por primera vez
-    tablero_form = creaTableroForm()
-    return render(request, 'tablero/crea_tablero.html', context: {'formulary':tablero_form})
+    
+    return render(request, 'tablero/crea_tablero.html', context: {'form':tablero_form}) #Este form del context se llama igual que el {{form.as_div}} del crea_tablero
