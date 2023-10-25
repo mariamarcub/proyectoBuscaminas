@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">  
+<head>    
+    <title>TABLERO</title>    
+    <meta charset="UTF-8">
+    <meta name="title" content="Indica Buscaminas">
+    <meta name="description" content="Indice Buscaminas">    
+
+   
+    
+</head>  
+<body>    
+    <a href="../crea_tablero/" target="_self"> Crear Tablero </a>
+    <table style="border: 2px solid black">
+
+        Filas {{filas}} <br/>
+        Columnas {{columnas}} <br/>
+        {% for f in rango_filas %}   <!--{{}} sirve para búsquedas // {} sirve para funciones -->
+            <tr style="height: 15px; border: 1px solid black">
+                {% for c in rango_columnas %}
+                    <td style="width: 15px; border: 1px solid black">
+
+                    </td>
+                {%endfor%}
+            </tr>
+
+        {%endfor%}
+    </table>
+
+
+</body>  
+</html>

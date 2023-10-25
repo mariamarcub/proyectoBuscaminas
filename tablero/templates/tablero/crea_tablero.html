@@ -10,13 +10,14 @@
 </head>  
 <body>    
   
-    <form id="formulario" action="./crea_tablero" method="post">
-        
-        <label for="fila">Filas:</label>
+    <form id="formulario" method="get">
+        {{formulary.as_div}}   
+
+        <!--<label for="fila">Filas:</label>
         <input type="number" id="fila" name="fila" />
       
         <label for="columna">Columnas:</label>
-        <input type="number" id="columna" name="columna" />
+        <input type="number" id="columna" name="columna" /> -->
       
         <input type="button" id="boton" name="boton" value="Crear Tablero"/>
      
