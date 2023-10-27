@@ -16,7 +16,6 @@ def crea_tablero(request):
             columnas = tablero_form.cleaned_data['columnas']
             filas = tablero_form.cleaned_data['filas']
             return render(request, 'tablero/muestra_tablero.html',
-                          {'filas':filas,'columnas':columnas,
-                                    'rango_filas':range(filas), 'rango_columnas': range(columnas)})
+                          {'filas':filas,'columnas':columnas,'rango_filas':range(filas),'rango_columnas':range(columnas)})
     #Si se pide la página por primera vez
     return render(request, 'tablero/crea_tablero.html', {'form':tablero_form})
