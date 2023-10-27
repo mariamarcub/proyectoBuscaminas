@@ -5,3 +5,5 @@ class CreaTableroForm(forms.Form):
     columnas = forms.IntegerField(label='Columnas', min_value=1, max_value=15, required=True, initial=2)
 
     #Por defecto el required es TRUE, por lo que no es obligatorio ponerlo en el caso que lo sea
+
+
